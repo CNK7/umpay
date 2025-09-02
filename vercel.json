@@ -3,7 +3,7 @@
   "name": "umso-telegram-bot",
   "builds": [
     {
-      "src": "umpay/wsgi.py",
+      "src": "umpay/index.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "50mb"
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/umpay/wsgi.py"
+      "dest": "/umpay/index.py"
     }
   ],
   "env": {
