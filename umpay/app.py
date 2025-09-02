@@ -501,10 +501,13 @@ def health_check():
     })
 
 # 初始化数据库（Vercel部署时需要）
-init_db()
+try:
+    init_db()
+except Exception as e:
+    print(f"Database initialization error: {e}")
 
 # Vercel部署需要的应用导出
-app_instance = app
+# 直接导出app实例供Vercel使用
 
 if __name__ == '__main__':
     # 启动定时任务线程（仅在本地运行时）
