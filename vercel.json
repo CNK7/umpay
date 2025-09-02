@@ -17,10 +17,6 @@
     }
   ],
   "env": {
-    "UMPAY_SECRET_KEY": "@umpay_secret_key",
-    "TRON_API_KEY": "@tron_api_key",
-    "USDT_WALLET_ADDRESS": "@usdt_wallet_address",
-    "TRX_WALLET_ADDRESS": "@trx_wallet_address",
     "FLASK_ENV": "production"
   },
 
